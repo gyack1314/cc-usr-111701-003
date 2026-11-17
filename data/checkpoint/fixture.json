@@ -1,0 +1,26 @@
+{
+  "kind": "ct-checkpoint-fixture",
+  "protocol": "ct-log",
+  "collection": "checkpoint-demo",
+  "log_id": "5020616211319e796761a3c64c97377c13594d59aee695287cdc4942674064cf",
+  "verification_key_b64": "ZnJvemVuLWRlbW8tbG9nLWtleQ==",
+  "rounds": 3,
+  "mirrors": [
+    {
+      "name": "mirror-a",
+      "asset": {
+        "path": "mirror-a.records.json",
+        "bytes": 5552,
+        "sha256": "9ea73a1f4cfa19032ac37ca5f4adc03365a31961eb8bcd93970281d97aa2fab6"
+      }
+    },
+    {
+      "name": "mirror-b",
+      "asset": {
+        "path": "mirror-b.records.json",
+        "bytes": 1990,
+        "sha256": "b16e3c44d8a782e5a88cc957a06769804ca583c89a13b0eeddc55900469a69a4"
+      }
+    }
+  ]
+}

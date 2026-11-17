@@ -1,0 +1,146 @@
+[
+  {
+    "round": 1,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-sth",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"sha256_root_hash\": \"763cf4866db052007764ed547464106a1f5ca70c9a4e483b20d6951c136f3a49\", \"timestamp\": 1700000003000, \"tree_head_signature\": \"c21d62d768ef0c69868163636ee8d2c8d48e2b127e546b7b1128b4f7e51a4627\", \"tree_size\": 3}"
+    }
+  },
+  {
+    "round": 1,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-entries?start=0&end=2",
+      "headers": {}
+    },
+    "response": {
+      "status": 503,
+      "body": "{\"error\": \"temporarily unavailable\"}"
+    }
+  },
+  {
+    "round": 1,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-entries?start=0&end=2",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"entries\": [{\"index\": 0, \"leaf_input\": \"eyJjZXJ0aWZpY2F0ZSI6IkNOPWRlbW8udGVzdDowIiwic2FuIjpbImxlYWYwLmRlbW8udGVzdCIsImRlbW8udGVzdCJdLCJzZXJpYWwiOjAsInN1YmplY3QiOiJkZW1vLnRlc3QifQ==\"}, {\"index\": 1, \"leaf_input\": \"eyJjZXJ0aWZpY2F0ZSI6IkNOPWRlbW8udGVzdDoxIiwic2FuIjpbImxlYWYxLmRlbW8udGVzdCIsImRlbW8udGVzdCJdLCJzZXJpYWwiOjEsInN1YmplY3QiOiJkZW1vLnRlc3QifQ==\"}, {\"index\": 2, \"leaf_input\": \"eyJjZXJ0aWZpY2F0ZSI6IkNOPWRlbW8udGVzdDoyIiwic2FuIjpbImxlYWYyLmRlbW8udGVzdCIsImRlbW8udGVzdCJdLCJzZXJpYWwiOjIsInN1YmplY3QiOiJkZW1vLnRlc3QifQ==\"}]}"
+    }
+  },
+  {
+    "round": 1,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-proof-by-leaf?leaf_index=0&tree_size=3",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"hashes\": [\"976426e4591c8a5c7af2c0eb6363944bcaf5f47e12bc64cd80dbd5a50420824b\", \"739e5a176aa6fb063ab10c7ecfcb445273116e4400c4a38feb2258e16d19c069\"], \"leaf_hash\": \"8e60622506f8cb08aefaf1b7ccf23bbbba1caddbfedf61020eb456a83542ef64\"}"
+    }
+  },
+  {
+    "round": 1,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-proof-by-leaf?leaf_index=1&tree_size=3",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"hashes\": [\"8e60622506f8cb08aefaf1b7ccf23bbbba1caddbfedf61020eb456a83542ef64\", \"739e5a176aa6fb063ab10c7ecfcb445273116e4400c4a38feb2258e16d19c069\"], \"leaf_hash\": \"976426e4591c8a5c7af2c0eb6363944bcaf5f47e12bc64cd80dbd5a50420824b\"}"
+    }
+  },
+  {
+    "round": 1,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-proof-by-leaf?leaf_index=2&tree_size=3",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"hashes\": [\"5ca1fa3b62dd396e0af70fb12c1c1a78d70f8ca086bfe51142d7e461f91fdf7c\"], \"leaf_hash\": \"739e5a176aa6fb063ab10c7ecfcb445273116e4400c4a38feb2258e16d19c069\"}"
+    }
+  },
+  {
+    "round": 2,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-sth",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"sha256_root_hash\": \"1585de1c086865a88199ef548cb3c8600a9871d26349900b323faf0a07cee227\", \"timestamp\": 1700000005000, \"tree_head_signature\": \"886d5f43570b66f1bc4933721b04ff7208582807f8e96bd8a484af484985357f\", \"tree_size\": 5}"
+    }
+  },
+  {
+    "round": 2,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-sth-consistency?first=3&second=5",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"hashes\": [\"739e5a176aa6fb063ab10c7ecfcb445273116e4400c4a38feb2258e16d19c069\", \"f6952025fcb19266c6390e06f73f5c5fdd71562fae83f3554d39b0b7c016801b\", \"5ca1fa3b62dd396e0af70fb12c1c1a78d70f8ca086bfe51142d7e461f91fdf7c\", \"228d4fed5ce9a9970c864faf0b29491ee1b7c53990d7f7936356db9473a4b4a4\"]}"
+    }
+  },
+  {
+    "round": 2,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-entries?start=3&end=4",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"entries\": [{\"index\": 3, \"leaf_input\": \"eyJjZXJ0aWZpY2F0ZSI6IkNOPWRlbW8udGVzdDozIiwic2FuIjpbImxlYWYzLmRlbW8udGVzdCIsImRlbW8udGVzdCJdLCJzZXJpYWwiOjMsInN1YmplY3QiOiJkZW1vLnRlc3QifQ==\"}, {\"index\": 4, \"leaf_input\": \"eyJjZXJ0aWZpY2F0ZSI6IkNOPWRlbW8udGVzdDo0Iiwic2FuIjpbImxlYWY0LmRlbW8udGVzdCIsImRlbW8udGVzdCJdLCJzZXJpYWwiOjQsInN1YmplY3QiOiJkZW1vLnRlc3QifQ==\"}]}"
+    }
+  },
+  {
+    "round": 2,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-proof-by-leaf?leaf_index=3&tree_size=5",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"hashes\": [\"739e5a176aa6fb063ab10c7ecfcb445273116e4400c4a38feb2258e16d19c069\", \"5ca1fa3b62dd396e0af70fb12c1c1a78d70f8ca086bfe51142d7e461f91fdf7c\", \"228d4fed5ce9a9970c864faf0b29491ee1b7c53990d7f7936356db9473a4b4a4\"], \"leaf_hash\": \"f6952025fcb19266c6390e06f73f5c5fdd71562fae83f3554d39b0b7c016801b\"}"
+    }
+  },
+  {
+    "round": 2,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-proof-by-leaf?leaf_index=4&tree_size=5",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"hashes\": [\"a140f2df72e3f77d208d8c37e7a5d73e5e9e64d865063b88b63242de1bff904d\"], \"leaf_hash\": \"228d4fed5ce9a9970c864faf0b29491ee1b7c53990d7f7936356db9473a4b4a4\"}"
+    }
+  },
+  {
+    "round": 3,
+    "request": {
+      "method": "GET",
+      "url": "ct/v1/get-sth",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "{\"sha256_root_hash\": \"1585de1c086865a88199ef548cb3c8600a9871d26349900b323faf0a07cee227\", \"timestamp\": 1700000005000, \"tree_head_signature\": \"886d5f43570b66f1bc4933721b04ff7208582807f8e96bd8a484af484985357f\", \"tree_size\": 5}"
+    }
+  }
+]
