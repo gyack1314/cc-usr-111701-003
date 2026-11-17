@@ -1,0 +1,23 @@
+{
+  "tree_size": 3,
+  "timestamp": 1794824400000,
+  "sha256_root_hash": "aabb",
+  "tree_head_signature": "synthetic-signature",
+  "entries": [
+    {
+      "index": 0,
+      "leaf_input": "AAEC"
+    },
+    {
+      "index": 1,
+      "leaf_input": "AAED"
+    }
+  ],
+  "proof": {
+    "first": 2,
+    "second": 3,
+    "hashes": [
+      "ABCD"
+    ]
+  }
+}
