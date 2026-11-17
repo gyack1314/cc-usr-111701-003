@@ -1,0 +1,52 @@
+{
+  "protocol": "ct-log",
+  "collection": "sample-003",
+  "records": [
+    {
+      "kind": "tree_size",
+      "id": "tree_size-1",
+      "version": "v1",
+      "refs": [],
+      "payload": {
+        "source": "synthetic",
+        "position": 0
+      }
+    },
+    {
+      "kind": "leaf",
+      "id": "leaf-2",
+      "version": "v1",
+      "refs": [
+        "tree_size-1"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 1
+      }
+    },
+    {
+      "kind": "tree_root",
+      "id": "tree_root-3",
+      "version": "v1",
+      "refs": [
+        "leaf-2"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 2
+      }
+    },
+    {
+      "kind": "proof",
+      "id": "proof-4",
+      "version": "v1",
+      "refs": [
+        "tree_root-3"
+      ],
+      "payload": {
+        "source": "synthetic",
+        "position": 3
+      }
+    }
+  ]
+}
