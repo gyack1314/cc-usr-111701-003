@@ -1,0 +1,14 @@
+{
+  "kind": "source-records",
+  "protocol": "ct-log",
+  "collection": "protocol-sample",
+  "source_url": "https://ct.example.test/ct/v1/get-sth",
+  "assets": [
+    {
+      "path": "conflict-source.bin",
+      "bytes": 345,
+      "sha256": "a7853bdb378cc18c4def61a8d82ef7324bb0c72ee02effa1998ea3e4fb2b13c8"
+    }
+  ],
+  "calls": []
+}
